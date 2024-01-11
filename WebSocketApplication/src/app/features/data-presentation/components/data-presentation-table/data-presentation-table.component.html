@@ -1,0 +1,29 @@
+<div class="data-table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Integer</th>
+        <th>Float</th>
+        <th>Color</th>
+        <th>Child</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let message of data">
+        <td>{{ message.id }}</td>
+        <td>{{ message.int }}</td>
+        <td>{{ message.float }}</td>
+        <td>
+          <div class="color-cell" [style.backgroundColor]="message.color">
+            {{ message.color }}
+          </div>
+        </td>
+        <td>
+          <app-child-table [childData]="message.child"></app-child-table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

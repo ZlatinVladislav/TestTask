@@ -1,0 +1,15 @@
+.form-field{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container{
+  display: flex;
+  gap: 1rem;
+}
+
+.form-field input[type="number"],
+.form-field input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+}

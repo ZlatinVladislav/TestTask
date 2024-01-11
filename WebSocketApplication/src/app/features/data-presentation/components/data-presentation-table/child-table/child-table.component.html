@@ -1,0 +1,16 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>{{ childData.id }}</td>
+      <td>
+        <span [style.backgroundColor]="childData.color">{{ childData.color }}</span>
+      </td>
+    </tbody>
+  </table>
+</div>

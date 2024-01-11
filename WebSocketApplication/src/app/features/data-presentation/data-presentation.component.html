@@ -1,0 +1,5 @@
+<div class="data-container">
+<app-data-presentation-header (filterForm)="applyFilter($event)"> </app-data-presentation-header>
+<app-data-presentation-table [data]="filteredMessages$ | async"></app-data-presentation-table>
+</div>
+
